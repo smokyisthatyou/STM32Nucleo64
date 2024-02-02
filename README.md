@@ -27,7 +27,7 @@ The following diagram illustrates the various hardware features:
 
 The board necessitates certain system requirements. Initially, it is essential to have a device running Windows OS (7, 8, or 10), Linux 64-bit, or MacOS. Additionally, a USB Type-A to Mini-B cable is required to connect the board to the device.
 
-ST-Microelectronics has introduced STM32CubeIDE as the Integrated Development Environment specifically designed for the development of STM32 software. To download the STM32CubeIDE software, it may require users to register on the official ST website at [www.st.com](https://www.st.com). Once registered, users can proceed with the download of STM32CubeIDE-xxx, selecting the appropriate version compatible with their operating system (<a href="/tutorial_pictures/1.png">Figure 3</a>). It is also possible to select the preferred release, although it's highly recommended to opt for the most recent version when downloading the software.
+ST-Microelectronics has introduced STM32CubeIDE as the Integrated Development Environment specifically designed for the development of STM32 software. To download the STM32CubeIDE software, it may require users to register on the official [ST website](https://www.st.com). Once registered, users can proceed with the download of STM32CubeIDE-xxx, selecting the appropriate version compatible with their operating system (<a href="/tutorial_pictures/1.png">Figure 3</a>). It is also possible to select the preferred release, although it's highly recommended to opt for the most recent version when downloading the software.
 
 <figure>
     <img src="/tutorial_pictures/1.png" width="200"
@@ -58,8 +58,8 @@ Search for the "*myST*" tab in the top bar of your display and click on it to un
 
 <figure>
     <img src="/tutorial_pictures/3.1.png" width="200"
-         alt="Figure 5: Opening the "Login" window">
-    <figcaption>Figure 5: Opening the "Login" window</figcaption>
+         alt="Figure 5: Opening the &quot;Login window&quot;">
+    <figcaption>Figure 5: Opening the "Login window"</figcaption>
 </figure>
 
 <figure>
