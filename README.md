@@ -54,82 +54,82 @@ The initial step involves logging into myST through the downloaded software. Thi
 //
 
 - *MacOS users*:
-Search for the "*myST*" tab in the top bar of your display and click on it to unveil the "*Login*" button (<a href=“/tutorial_pictures/3.1.png”>Figure 5</a>). Then select it to open a window offering options for both already registered users and new ones (<a href=“/tutorial_pictures/3.2.png”>Figure 6</a>).
+Search for the "*myST*" tab in the top bar of your display and click on it to unveil the "*Login*" button (<a href=“/tutorial_pictures/3_1.png”>Figure 5</a>). Then select it to open a window offering options for both already registered users and new ones (<a href=“/tutorial_pictures/3_2.png”>Figure 6</a>).
 
 <figure>
-    <img src="/tutorial_pictures/3.1.png" width="200"
+    <img src="/tutorial_pictures/3_1.png" width="200"
          alt="Figure 5: Opening the &quot;Login window&quot;">
     <figcaption>Figure 5: Opening the "Login window"</figcaption>
 </figure>
 
 <figure>
-    <img src="/tutorial_pictures/3.2.png" width="200"
+    <img src="/tutorial_pictures/3_2.png" width="200"
          alt="Figure 6: Loggin into the account">
     <figcaption>Figure 6: Loggin into the account</figcaption>
 </figure>
 
-The first launch of the application will display <a href=“/tutorial_pictures/4.1.png”>Figure 7</a>. Subsequent launches will likely present <a href=“/tutorial_pictures/4.2.png”>Figure 8</a>. In both scenarios, select "*... new STM32 project*".
+The first launch of the application will display <a href=“/tutorial_pictures/4_1.png”>Figure 7</a>. Subsequent launches will likely present <a href=“/tutorial_pictures/4_2.png”>Figure 8</a>. In both scenarios, select "*... new STM32 project*".
 
 <figure>
-    <img src="/tutorial_pictures/4.1.png" width="200"
+    <img src="/tutorial_pictures/4_1.png" width="200"
          alt="Figure 7: Creation of a new STM32 project version 1">
     <figcaption>Figure 7: Creation of a new STM32 project version 1</figcaption>
 </figure>
 
 <figure>
-    <img src="/tutorial_pictures/4.2.png" width="200"
+    <img src="/tutorial_pictures/4_2.png" width="200"
          alt="Figure 8: Creation of a new STM32 project version 2">
     <figcaption>Figure 8: Creation of a new STM32 project version 2</figcaption>
 </figure>
 
-At this point, you have the option to select the specific MCU or MPU. Alternatively, it is possible to directly choose the board by clicking on "*Board selector*" (<a href=“/tutorial_pictures/5.1.png”>Figure 9</a>) and entering the board name into the "*Commercial Part Number*" field (<a href=“/tutorial_pictures/5.2.png”>Figure 10</a>).
+At this point, you have the option to select the specific MCU or MPU. Alternatively, it is possible to directly choose the board by clicking on "*Board selector*" (<a href=“/tutorial_pictures/5_1.png”>Figure 9</a>) and entering the board name into the "*Commercial Part Number*" field (<a href=“/tutorial_pictures/5_2.png”>Figure 10</a>).
 
 <figure>
-    <img src="/tutorial_pictures/5.1.png" width="200"
+    <img src="/tutorial_pictures/5_1.png" width="200"
          alt="Figure 9: From MCU/MPU selection page to board selection page">
     <figcaption>Figure 9: From MCU/MPU selection page to board selection page</figcaption>
 </figure>
 
 <figure>
-    <img src="/tutorial_pictures/5.2.png" width="200"
+    <img src="/tutorial_pictures/5_2.png" width="200"
          alt="Figure 10: Board name insertion">
     <figcaption>Figure 10: Board name insertione</figcaption>
 </figure>
 
-After entering the correct board name, the list on the right side of the page will update to display the search match. To proceed, select the option shown (<a href=“/tutorial_pictures/5.3.png”>Figure 11</a>). Once chosen, relevant board information will be displayed, and the "*Next*" button will become available (<a href=“/tutorial_pictures/5.4.png”>Figure 12</a>). Click on it to progress to the following phase.
+After entering the correct board name, the list on the right side of the page will update to display the search match. To proceed, select the option shown (<a href=“/tutorial_pictures/5_3.png”>Figure 11</a>). Once chosen, relevant board information will be displayed, and the "*Next*" button will become available (<a href=“/tutorial_pictures/5_4.png”>Figure 12</a>). Click on it to progress to the following phase.
 
 <figure>
-    <img src="/tutorial_pictures/5.3.png" width="200"
+    <img src="/tutorial_pictures/5_3.png" width="200"
          alt="Figure 11: Selection of the researched board">
     <figcaption>Figure 11: Selection of the researched board</figcaption>
 </figure>
 
 <figure>
-    <img src="/tutorial_pictures/5.4.png" width="200"
+    <img src="/tutorial_pictures/5_4.png" width="200"
          alt="Figure 12: Board information and access to the next step">
     <figcaption>Figure 12: Board information and access to the next step</figcaption>
 </figure>
 
-Next, insert a project name (<a href=“/tutorial_pictures/6.1.png”>Figure 13</a>) and then click on the "*Next*" button, which will become available.
+Next, insert a project name (<a href=“/tutorial_pictures/6_1.png”>Figure 13</a>) and then click on the "*Next*" button, which will become available.
 
 <figure>
-    <img src="/tutorial_pictures/6.1.png" width="200"
+    <img src="/tutorial_pictures/6_1.png" width="200"
          alt="Figure 13: Insertion of a project name">
     <figcaption>Figure 13: Insertion of a project name</figcaption>
 </figure>
 
-In the following page click on "*Finish*" to initialize the project (<a href=“/tutorial_pictures/6.2.png”>Figure 14</a>).
+In the following page click on "*Finish*" to initialize the project (<a href=“/tutorial_pictures/6_2.png”>Figure 14</a>).
 
 <figure>
-    <img src="/tutorial_pictures/6.2.png" width="200"
+    <img src="/tutorial_pictures/6_2.png" width="200"
          alt="Figure 14: Conclusion of the step">
     <figcaption>Figure 14: Conclusion of the step</figcaption>
 </figure>
 
-A banner will appear, prompting to select an option (<a href=“/tutorial_pictures/6.3.png”>Figure 15</a>). It is recommended to choose "*Yes*".
+A banner will appear, prompting to select an option (<a href=“/tutorial_pictures/6_3.png”>Figure 15</a>). It is recommended to choose "*Yes*".
 
 <figure>
-    <img src="/tutorial_pictures/6.3.png" width="200"
+    <img src="/tutorial_pictures/6_3.png" width="200"
          alt="Figure 15: Initialization of the project">
     <figcaption>Figure 15: Initialization of the project</figcaption>
 </figure>
