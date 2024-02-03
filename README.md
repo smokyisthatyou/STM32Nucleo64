@@ -55,6 +55,9 @@ click pictures href "https://baltig.polito.it/caos2023/group2/-/tree/point1/tuto
 graph LR;
 point2-->README.md;
 point2-->ex3-priority_inversion;
+ex3-priority_inversion-->BIN_SEM;
+ex3-priority_inversion-->README.md
+
 
 
 click README.md href "https://baltig.polito.it/caos2023/group2/-/blob/point2/README.md" "Link to README.md";
