@@ -40,9 +40,13 @@ boardOS-->presentation.pptx;
 %%{init: {'theme':'base'}}%%
 graph LR;
 point1-->README.md;
+point1-->dir([tutorial_pictures]);
+pictures["board.png <br>board_diagram.png <br>1.png <br>2.png <br>3_1.png <br>3_2.png <br>4_1.png <br>4_2.png <br>5_1.png <br>5_2.png <br>5_4.png <br>6_1.png <br>6_2.png <br>6_3.png"]
+dir([tutorial_pictures])-->pictures;
 
-click README.md href "https://baltig.polito.it/caos2023/group2/-/blob/point2/README.md" "Link to README.md";
-
+click README.md href "https://baltig.polito.it/caos2023/group2/-/blob/point1/README.md" "Link to README.md";
+click dir href "https://baltig.polito.it/caos2023/group2/-/tree/point1/tutorial_pictures" "Link to README.md";
+click pictures href "https://baltig.polito.it/caos2023/group2/-/tree/point1/tutorial_pictures" "Link to README.md";
 ```
 
 &nbsp;
@@ -50,14 +54,10 @@ click README.md href "https://baltig.polito.it/caos2023/group2/-/blob/point2/REA
 ```mermaid
 %%{init: {'theme':'base'}}%%
 graph LR;
-point2-->README.md;
-point2-->dir([tutorial_pictures]);
-pictures["board.png <br>board_diagram.png <br>1.png <br>2.png <br>3_1.png <br>3_2.png <br>4_1.png <br>4_2.png <br>5_1.png <br>5_2.png <br>5_4.png <br>6_1.png <br>6_2.png <br>6_3.png"]
-dir([tutorial_pictures])-->pictures;
+point1-->README.md;
 
-click README.md href "https://baltig.polito.it/caos2023/group2/-/blob/point1/README.md" "Link to README.md";
-click dir href "https://baltig.polito.it/caos2023/group2/-/tree/point1/tutorial_pictures" "Link to README.md";
-click pictures href "https://baltig.polito.it/caos2023/group2/-/tree/point1/tutorial_pictures" "Link to README.md";
+click README.md href "https://baltig.polito.it/caos2023/group2/-/blob/point2/README.md" "Link to README.md";
+
 ```
 
 &nbsp;
