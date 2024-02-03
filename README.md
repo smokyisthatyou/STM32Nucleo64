@@ -53,11 +53,12 @@ click pictures href "https://baltig.polito.it/caos2023/group2/-/tree/point1/tuto
 ```mermaid
 %%{init: {'theme':'base'}}%%
 graph LR;
-point2-->README.md;
+A[README.md];
+B[README.md];
+point2-->A;
 point2-->ex3-priority_inversion;
 ex3-priority_inversion-->BIN_SEM;
-ex3-priority_inversion-->README3.md
-
+ex3-priority_inversion-->B;
 
 
 click README.md href "https://baltig.polito.it/caos2023/group2/-/blob/point2/README.md" "Link to README.md";
