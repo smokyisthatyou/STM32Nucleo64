@@ -1,4 +1,3 @@
-
 # GUIDE
 
 This README.md file contains an illustration of the project structure and its objectives to allow users to efficiently surf through the various branches.
@@ -54,7 +53,9 @@ click pictures href "https://baltig.polito.it/caos2023/group2/-/tree/point1/tuto
 ```mermaid
 %%{init: {'theme':'base'}}%%
 graph LR;
-point1-->README.md;
+point2-->README.md;
+point2-->ex3-priority_inversion;
+
 
 click README.md href "https://baltig.polito.it/caos2023/group2/-/blob/point2/README.md" "Link to README.md";
 
