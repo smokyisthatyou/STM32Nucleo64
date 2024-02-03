@@ -56,7 +56,7 @@ graph LR;
 point2-->README.md;
 point2-->ex3-priority_inversion;
 ex3-priority_inversion-->BIN_SEM;
-ex3-priority_inversion-->README.md
+ex3-priority_inversion-->README3.md
 
 
 
