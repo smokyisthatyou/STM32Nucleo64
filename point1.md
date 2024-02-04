@@ -37,6 +37,8 @@ ST-Microelectronics has introduced STM32CubeIDE as the Integrated Development En
 
 After completing the download of the software, proceed with the installation by following the displayed instructions.
 
+# Project creation
+
 The user should now connect the board to the device. At this stage, everything is set to initiate a first project. Upon launching the application, a prompt will appear, requesting the definition of a workspace (<a href="/tutorial_pictures/2.png">Figure 4</a>). One can choose either to select a specific name and position or proceed with the default option provided.
 
 <figure align="center">
@@ -133,4 +135,123 @@ A banner will appear, prompting to select an option (<a href="/tutorial_pictures
          alt="Figure 15: Initialization of the project">
     <figcaption>Figure 15: Initialization of the project</figcaption>
 </figure>
+
+The following window (<a href="/tutorial_pictures/6_3.png">Figure 16</a>) will be now displayed. Here it is possible to change the board configurations.
+
+<figure align="center">
+    <img src="/tutorial_pictures/7.png" width="500"
+         alt="Figure 16: Pinout & Configuration">
+    <figcaption>Figure 16: Pinout & Configuration</figcaption>
+</figure>
+
+The OS currently installed on the board is [FreeRTOS](https://www.freertos.org) V10.3.1, which is a real-time operating system (RTOS) for microcontrollers and small microprocessors.
+FreeRTOS allows the user to structure the project in tasks which group sets of instructions. To add a task at this stage, search for the "*FREERTOS*" (<a href="/tutorial_pictures/8_1.png">Figure 17</a> arrow n.1) button in the left column and select it to unveil the "*FREERTOS Mode and Configuration*" window. Now click on the "*Tasks and Queues*"  (<a href="/tutorial_pictures/8_1.png">Figure 17</a> arrow n.2) button to reveal the corresponding tab. As shown in <a href="/tutorial_pictures/8_1.png">Figure 17</a>, there is already a *DefaultTask* created which the user can later modify. Select the "*Add*" button (<a href="/tutorial_pictures/8_1.png">Figure 17</a> arrow n.3) to proceed with the creation of a new task.
+
+<figure align="center">
+    <img src="/tutorial_pictures/8_1.png" width="500"
+         alt="Figure 17: Creation of a new task">
+    <figcaption>Figure 17: Creation of a new task</figcaption>
+</figure>
+
+A window called "*New Task*" (<a href="/tutorial_pictures/8_2.png">Figure 18</a>) will be opened allowing the user to set the specifications for the new task. It is also possible to set a priority which will be used if a prioritized preemptive scheduling algorithm will be selected.
+
+<figure align="center">
+    <img src="/tutorial_pictures/8_2.png" width="500"
+         alt="Figure 18: New Task window">
+    <figcaption>Figure 18: New Task window</figcaption>
+</figure>
+
+FreeRTOS provides three different scheduling algorithms:
+- Prioritized preemptive scheduling with time slicing;
+- Prioritized preemptive scheduling without time slicing;
+- Cooperative scheduling.
+
+At this stage, it is only possible to choose whether to enable or not the preemptive scheduling algorithm. To do so, click on the "*Config parameters*" button (<a href="/tutorial_pictures/8_3.png">Figure 19</a> arrow n.1) which can be found in the "*FREERTOS Mode and Configuration*" window, in the "*FREERTOS*" section. The tab will display different categories, search for the "*Kernel settings*" entry. The first item in the list is "*USE_PREEMPTION*" which if set to "*Enabled*" will result in the selection of a preemptive scheduling algorithm, on the contrary if set to "*Disabled*" a coooperative scheduling algorithm will be used. The default value of this parameter is "*Enabled*" (<a href="/tutorial_pictures/8_3.png">Figure 19</a> arrow n.2), simply click on it to display the "*Disabled*" option.
+
+<figure align="center">
+    <img src="/tutorial_pictures/8_3.png" width="500"
+         alt="Figure 19: &quot;*USE_PREEMPTION*&quot; parameter">
+    <figcaption>Figure 19: "*USE_PREEMPTION*" parameter</figcaption>
+</figure>
+
+**If changes have been made**, it is necessary to save the project and generate the code that matches the modifications. Look for the "*Save*" button (<a href="/tutorial_pictures/9_1.png">Figure 20</a>) at the top-left corner of the screen and click on it.
+
+<figure align="center">
+    <img src="/tutorial_pictures/9_1.png" width="500"
+         alt="Figure 20: Save button">
+    <figcaption>Figure 20: Save button</figcaption>
+</figure>
+
+A question window will appear, select "*Yes*" (<a href="/tutorial_pictures/9_2.png">Figure 21</a>) to generate the code.
+
+<figure align="center">
+    <img src="/tutorial_pictures/9_2.png" width="500"
+         alt="Figure 21: Code generation window">
+    <figcaption>Figure 21: Code generation window</figcaption>
+</figure>
+
+Select the "*Yes*" option (<a href="/tutorial_pictures/9_3.png">Figure 22</a>) in the following window as well to display the code associated perspective.
+
+<figure align="center">
+    <img src="/tutorial_pictures/9_3.png" width="500"
+         alt="Figure 22: Open associated perspective window">
+    <figcaption>Figure 22: Open associated perspective window</figcaption>
+</figure>
+
+The "*main.c*" file will now be opened.
+
+**If changes have not been made**, in order to display the "*main.c*" file expand the project directory on the left in the "*Project Explorer*" window (<a href="/tutorial_pictures/10_1.png">Figure 23</a>), then open "*Core*" and after unfold "*Src*". The "*main.c*" will be te second item in the list.
+
+<figure align="center">
+    <img src="/tutorial_pictures/9_3.png" width="500"
+         alt="Figure 23: &quot;main.c&quot; location">
+    <figcaption>Figure 23: "main.c" location"</figcaption>
+</figure>
+
+Scrolling through the "*main.c*" it is possible to observe how tasks work. Any task is composed by three parts (the example below is for *DefaultTask* hence those lines of code can be found only if it has not been deleted. Any task created has the same format, but different parameters values and implementation):
+
+- before the main function
+```C++
+/*in the private function prototypes section*/
+void StartDefaultTask(void const * argument);
+```
+
+- in the main function
+```C++
+/* Create the thread(s) */
+/* definition and creation of defaultTask */
+osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
+defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
+```
+
+- **Task implementation**, after the main function
+```C++
+/* USER CODE BEGIN Header_StartDefaultTask */
+/**
+  * @brief  Function implementing the defaultTask thread.
+  * @param  argument: Not used
+  * @retval None
+  */
+/* USER CODE END Header_StartDefaultTask */
+void StartDefaultTask(void const * argument)
+{
+  /* USER CODE BEGIN 5 */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END 5 */
+}
+```
+
+If the user wants to add a new task, it is recommended to manually insert it by adapting the format above. Using the "*Pinout & Configuration*" window (accessible by double clicking on the .ioc file in the "*Project Explorer*" window) to add the task will result in the re-generation of the code and will most likely erase any customization of the code implemented by the user.
+
+///aggiungere specifiche su le parti dei task
+///aggiungere possibili modifiche scheduler in freertosconfig
+///aggiungere linux windows foto e descrizione 
+///modificare dimensioni foto appena inserite
+///magari dividere meglio le sezioni
+
+
 
