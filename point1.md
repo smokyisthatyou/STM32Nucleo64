@@ -54,7 +54,7 @@ The initial step involves logging into myST through the downloaded software. Thi
 //
 
 - *MacOS users*:
-Search for the "*myST*" tab in the top bar of your display and click on it to unveil the "*Login*" button (<a href=“/tutorial_pictures/3_1.png”>Figure 5</a>). Then select it to open a window offering options for both already registered users and new ones (<a href=“/tutorial_pictures/3_2.png”>Figure 6</a>).
+Search for the "*myST*" tab in the top bar of your display and click on it to unveil the "*Login*" button (<a href="/tutorial_pictures/3_1.png">Figure 5</a>). Then select it to open a window offering options for both already registered users and new ones (<a href="/tutorial_pictures/3_2.png">Figure 6</a>).
 
 <figure align="center">
     <img src="/tutorial_pictures/3_1.png" width="150"
@@ -68,7 +68,7 @@ Search for the "*myST*" tab in the top bar of your display and click on it to un
     <figcaption>Figure 6: Loggin into the account</figcaption>
 </figure>
 
-The first launch of the application will display <a href=“/tutorial_pictures/4_1.png”>Figure 7</a>. Subsequent launches will likely present <a href=“/tutorial_pictures/4_2.png”>Figure 8</a>. In both scenarios, select "*... new STM32 project*".
+The first launch of the application will display <a href="/tutorial_pictures/4_1.png">Figure 7</a>. Subsequent launches will likely present <a href="/tutorial_pictures/4_2.png">Figure 8</a>. In both scenarios, select "*... new STM32 project*".
 
 <figure align="center">
     <img src="/tutorial_pictures/4_1.png" width="900"
@@ -82,7 +82,7 @@ The first launch of the application will display <a href=“/tutorial_pictures/4
     <figcaption>Figure 8: Creation of a new STM32 project version 2</figcaption>
 </figure>
 
-At this point, you have the option to select the specific MCU or MPU. Alternatively, it is possible to directly choose the board by clicking on "*Board selector*" (<a href=“/tutorial_pictures/5_1.png”>Figure 9</a>) and entering the board name into the "*Commercial Part Number*" field (<a href=“/tutorial_pictures/5_2.png”>Figure 10</a>).
+At this point, you have the option to select the specific MCU or MPU. Alternatively, it is possible to directly choose the board by clicking on "*Board selector*" (<a href="/tutorial_pictures/5_1.png">Figure 9</a>) and entering the board name into the "*Commercial Part Number*" field (<a href="/tutorial_pictures/5_2.png">Figure 10</a>).
 
 <figure align="center">
     <img src="/tutorial_pictures/5_1.png" width="900"
@@ -96,7 +96,7 @@ At this point, you have the option to select the specific MCU or MPU. Alternativ
     <figcaption>Figure 10: Board name insertione</figcaption>
 </figure>
 
-After entering the correct board name, the list on the right side of the page will update to display the search match. To proceed, select the option shown (<a href=“/tutorial_pictures/5_3.png”>Figure 11</a>). Once chosen, relevant board information will be displayed, and the "*Next*" button will become available (<a href=“/tutorial_pictures/5_4.png”>Figure 12</a>). Click on it to progress to the following phase.
+After entering the correct board name, the list on the right side of the page will update to display the search match. To proceed, select the option shown (<a href="/tutorial_pictures/5_3.png">Figure 11</a>). Once chosen, relevant board information will be displayed, and the "*Next*" button will become available (<a href="/tutorial_pictures/5_4.png">Figure 12</a>). Click on it to progress to the following phase.
 
 <figure align="center">
     <img src="/tutorial_pictures/5_3.png" width="900"
@@ -110,7 +110,7 @@ After entering the correct board name, the list on the right side of the page wi
     <figcaption>Figure 12: Board information and access to the next step</figcaption>
 </figure>
 
-Next, insert a project name (<a href=“/tutorial_pictures/6_1.png”>Figure 13</a>) and then click on the "*Next*" button, which will become available.
+Next, insert a project name (<a href="/tutorial_pictures/6_1.png">Figure 13</a>) and then click on the "*Next*" button, which will become available.
 
 <figure align="center">
     <img src="/tutorial_pictures/6_1.png" width="500"
@@ -118,7 +118,7 @@ Next, insert a project name (<a href=“/tutorial_pictures/6_1.png”>Figure 13<
     <figcaption>Figure 13: Insertion of a project name</figcaption>
 </figure>
 
-In the following page click on "*Finish*" to initialize the project (<a href=“/tutorial_pictures/6_2.png”>Figure 14</a>).
+In the following page click on "*Finish*" to initialize the project (<a href="/tutorial_pictures/6_2.png">Figure 14</a>).
 
 <figure align="center">
     <img src="/tutorial_pictures/6_2.png" width="500"
@@ -126,7 +126,7 @@ In the following page click on "*Finish*" to initialize the project (<a href=“
     <figcaption>Figure 14: Conclusion of the step</figcaption>
 </figure>
 
-A banner will appear, prompting to select an option (<a href=“/tutorial_pictures/6_3.png”>Figure 15</a>). It is recommended to choose "*Yes*".
+A banner will appear, prompting to select an option (<a href="/tutorial_pictures/6_3.png">Figure 15</a>). It is recommended to choose "*Yes*".
 
 <figure align="center">
     <img src="/tutorial_pictures/6_3.png" width="500"
