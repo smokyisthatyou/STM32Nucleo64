@@ -28,9 +28,12 @@ Here is a diagram displaying the contents of each branch. For further informatio
 ```mermaid
 %%{init: {'theme':'base'}}%%
 graph LR;
-boardOS-->README.md;
-boardOS-->report.pdf;            
-boardOS-->presentation.pptx;
+b(boardOS)
+b-->README.md;
+b-->report.pdf;            
+b-->presentation.pptx;
+
+click b href "https://baltig.polito.it/caos2023/group2/-/tree/boardOS" "Link to boardOS";
 ```
 
 &nbsp;
@@ -38,14 +41,19 @@ boardOS-->presentation.pptx;
 ```mermaid
 %%{init: {'theme':'base'}}%%
 graph LR;
-point1-->README.md;
-point1-->dir([tutorial_pictures]);
+p1(point1)
+p1-->README.md;
+p1-->point1.md;
+p1-->dir([tutorial_pictures]);
 pictures["board.png <br>board_diagram.png <br>1.png <br>2.png <br>3_1.png <br>3_2.png <br>4_1.png <br>4_2.png <br>5_1.png <br>5_2.png <br>5_4.png <br>6_1.png <br>6_2.png <br>6_3.png"]
 dir([tutorial_pictures])-->pictures;
 
+click p1 href "https://baltig.polito.it/caos2023/group2/-/tree/point1" "Link to point1";
+
 click README.md href "https://baltig.polito.it/caos2023/group2/-/blob/point1/README.md" "Link to README.md";
-click dir href "https://baltig.polito.it/caos2023/group2/-/tree/point1/tutorial_pictures" "Link to README.md";
-click pictures href "https://baltig.polito.it/caos2023/group2/-/tree/point1/tutorial_pictures" "Link to README.md";
+click point1.md href "https://baltig.polito.it/caos2023/group2/-/blob/point1/point1.md" "Link to point1.md";
+click dir href "https://baltig.polito.it/caos2023/group2/-/tree/point1/tutorial_pictures" "Link to tutorial_pictures";
+click pictures href "https://baltig.polito.it/caos2023/group2/-/tree/point1/tutorial_pictures" "Link to tutorial_pictures";
 ```
 
 &nbsp;
@@ -55,11 +63,13 @@ click pictures href "https://baltig.polito.it/caos2023/group2/-/tree/point1/tuto
 graph LR;
 A[README.md];
 B[README.md];
-point2-->A;
-point2-->ex3-priority_inversion;
+p2(point2)
+p2-->A;
+p2-->ex3-priority_inversion;
 ex3-priority_inversion-->BIN_SEM;
 ex3-priority_inversion-->B;
 
+click p2 href "https://baltig.polito.it/caos2023/group2/-/tree/point2" "Link to point2";
 
 click README.md href "https://baltig.polito.it/caos2023/group2/-/blob/point2/README.md" "Link to README.md";
 
@@ -70,7 +80,8 @@ click README.md href "https://baltig.polito.it/caos2023/group2/-/blob/point2/REA
 ```mermaid
 %%{init: {'theme':'base'}}%%
 graph LR;
-point3-->README.md;
+p3(point3)
+p3-->README.md;
 
 ```
 
@@ -79,6 +90,7 @@ point3-->README.md;
 ```mermaid
 %%{init: {'theme':'base'}}%%
 graph LR;
-point4-->README.md;
+p4(point4)
+p4-->README.md;
 
 ```
