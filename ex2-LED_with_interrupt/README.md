@@ -61,7 +61,7 @@ Moreover we need to declare the _defaultTask_, the task in charge to to control 
         osThreadId defaultTaskHandle;
         void StartDefaultTask(void const * argument);
 ```
-Now we can implement the _main()_ function. Here the functions:  
+Now we can implement the _main()_ function. The functions:  
 - _HAL_Init()_;  
 - _SystemClock_Config()_;  
 - _MX_GPIO_Init()_;  
@@ -74,7 +74,7 @@ We have to define the _defaultTask_ and start the scheduling program:
 int main(void){
     ...
     osThreadDef(defaultTask, StartDefaultTask, 
-                osPriorityNormal, 0, 128);
+                osPriorityRealtime, 0, 128);
     defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
     ...
     osKernelStart();
@@ -84,7 +84,7 @@ Where
 - _osThreadDef()_ is the macro in charge of defining the parameters of a thread (task) without immediately creating it. The parameters in the round brackets are  
     + task's name  
     + name of the function that will be the thread entry point. This function runs when the thread is started.  
-    + priority, where an higher value means an higher priority. Since we have only one task we choose priority =0 "osPriorityNormal".  
+    + priority, where an higher value means an higher priority. In this case we have chosen the priority "osPriorityRealtime" = 5 (maximum value).  
     + number of thread instances that can be created using this definition  
     + stack size (in bytes) allocated for the thread.  
 - _osThreadCreate()_ used to create the task with  
