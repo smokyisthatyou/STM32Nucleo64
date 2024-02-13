@@ -1,0 +1,65 @@
+[0.000] initConfigParams():  Configuration flags start
+[0.000] initConfigParams():   external-init                  false
+[0.000] initConfigParams():   pend-halt-timeout              (null)
+[0.000] initConfigParams():   halt                           false
+[0.000] initConfigParams():   config-file                    ""
+[0.000] initConfigParams():   persistent                     false
+[0.000] initConfigParams():  +log-file                       "C:\Users\franc\STM32CubeIDE\workspace_1.14.1\LED_interrupt\Debug\st-link_gdbserver_log.txt"
+[0.000] initConfigParams():  +log-level                      31
+[0.004] initConfigParams():  +port-number                    61234
+[0.004] initConfigParams():  +verbose                        true
+[0.004] initConfigParams():   refresh-delay                  15
+[0.004] initConfigParams():  +verify                         true
+[0.004] initConfigParams():  +swd                            true
+[0.004] initConfigParams():  +swo-port                       61234
+[0.004] initConfigParams():   cpu-clock                      8000000
+[0.004] initConfigParams():   swo-clock-div                  128
+[0.004] initConfigParams():   initialize-reset               false
+[0.004] initConfigParams():   debuggers                      false
+[0.004] initConfigParams():   serial-number                  ""
+[0.004] initConfigParams():  +apid                           0
+[0.004] initConfigParams():  +attach                         true
+[0.004] initConfigParams():   shared                         false
+[0.004] initConfigParams():   erase-all                      false
+[0.004] initConfigParams():   memory-map                     ""
+[0.004] initConfigParams():   ext-memory-loaders             false
+[0.004] initConfigParams():   extload_init                   (null)
+[0.004] initConfigParams():   extload                        (null)
+[0.004] initConfigParams():  +stm32cubeprogrammer-path       "C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_2.1.100.202311100844\tools\bin"
+[0.004] initConfigParams():   temp-path                      ""
+[0.004] initConfigParams():   preserve-temps                 false
+[0.004] initConfigParams():   frequency                      0
+[0.004] initConfigParams():   licenses                       false
+[0.004] initConfigParams():   ignore-rest                    false
+[0.004] initConfigParams():   version                        false
+[0.004] initConfigParams():   help                           false
+[0.004] initConfigParams():  Configuration flags end
+[0.006] init():  STMicroelectronics ST-LINK GDB server. Version 7.5.0
+Copyright (c) 2023, STMicroelectronics. All rights reserved.
+[0.020] openDevice():  COM frequency = 4000 kHz
+[0.020] openDevice():  Target connection mode: Attach
+[0.023] readFromTarget():  Reading ROM table for AP 0 @0xe00fffd0
+[0.029] reset_hw_wtchpt_module():  Hardware watchpoint supported by the target 
+[0.031] initContext():  ST-LINK Firmware version : V2J44M29
+[0.031] initContext():  Device ID: 0x421
+[0.032] initContext():  PC: 0xa
+[0.032] Device_GetStatus():  ST-LINK device status: RUN_MODE
+[0.032] initContext():  ST-LINK detects target voltage = 3.27 V
+[0.032] initContext():  ST-LINK device status: RUN_MODE
+[0.033] initServerContext():  ST-LINK device initialization OK
+[0.033] pollAndNotifyRun():  Stm32Device, pollAndNotify running...
+[0.035] updateState():  SwvSrv state change: 0 -> 1
+[0.035] WaitConnection():  Waiting for connection on port 61234...
+[0.035] ServerSocket():  Failed to bind to port 61234, error code -1: No error
+[0.035] deInit():  GdbSrv, deInit entry.
+[0.035] deInit():  GdbSessionManager, deInit entry.
+[0.137] deInit():  GdbSessionManager, deInit exit
+[0.137] deInit():  SwvSrv deInit entry
+[0.137] stop():  Stopping port 61234
+[0.245] WaitConnection():  Received stop for port 61234, not accepting new connections.
+[0.247] deInit():  SwvSrv deInit exit
+[0.248] closeDevice():  Stm32Device, closeDevice() entry
+[0.353] pollAndNotifyRun():  Stm32Device, pollAndNotify stopped
+[0.370] closeDevice():  Stm32Device, closeDevice() exit
+[0.370] deInit():  Stm32Device, deInit success
+[0.370] deInit():  GdbSrv, deInit exit.
