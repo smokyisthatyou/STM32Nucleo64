@@ -1,4 +1,4 @@
-# Structure of the branch
+# Structure
 
 This branch contains: 
 - <a href="/README.md">**README.md**</a> file: this current file which explains the structure of the branch;
