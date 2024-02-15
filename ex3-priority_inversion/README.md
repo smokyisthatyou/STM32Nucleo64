@@ -12,13 +12,16 @@ hercules (available for windows only): https://www.hw-group.com/software/hercule
 ## Overview 
 
 This exercise consist of three tasks with different priorities (HighTask, NormalTask and LowTask) and a binary semaphore.
+HighTask and LowTask acquire and release the semaphore under certain condition, MediumTask execute without interactions.
 
 The user button of the Nucleo64 board is used to release the semaphore, firstly taken by the high priority task. 
+
+This exercise is specifically design to explain the priority inversion problem that can happen in real-time systems using priority based scheduling. 
 
 ## Setup
 
 ## Execution
-Here a more detailed explanation of how the flow of execution proceed, and how this program is specifically written to culminate in a priority inversion case. 
+Here a more detailed explanation of how the flow of execution proceed, and how this program is specifically written to culminate in a priority inversion. 
 ### High Task
 
 The HighTask is the first one that the scheduler takes from the ready queue and begins its execution. 
