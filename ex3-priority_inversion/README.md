@@ -20,6 +20,70 @@ This exercise is specifically design to explain the priority inversion problem t
 
 ## Setup
 
+From the setup page of the project select PIN13 as input, since it is associated with the user button.
+
+<figure align="center">
+    <img src="img/pinout_config.png" width="400"
+         alt="Figure 1: Pinout configuration">
+    <figcaption>Figure 1: Pinout configuration</figcaption>
+</figure>
+
+Select TIM1 as time source. 
+
+Enable FreeRTOS. 
+
+It is possible to create the tasks and the semaphore manually or via the configuration page of the project, that will automatically generate the code.
+Configure HighTask with osPriorityAboveNormal, MediumTask with osPriorityNormal and LowTask with osPriorityLow. 
+
+
+<figure align="center">
+    <img src="img/tasks.png" width="400"
+         alt="Figure 2: Tasks configuration">
+    <figcaption>Figure 2: Tasks configuration</figcaption>
+</figure>
+
+
+<figure align="center">
+    <img src="img/sem.png" width="400"
+         alt="Figure 3: Semaphore configuration">
+    <figcaption>Figure 3: Semaphore configuration</figcaption>
+</figure>
+
+These private variables will be generated: 
+```
+osThreadId NormalTaskHandle;
+osThreadId HighTaskHandle;
+osThreadId LowTaskHandle;
+osSemaphoreId BinSemHandle;
+```
+And also these function prototypes:
+```
+void Startnormaltask(void const * argument);
+void Starthightask(void const * argument);
+void Startlowtask(void const * argument);
+```
+In the main function the tasks and the semaphore will be defined and created: 
+```
+/* definition and creation of BinSem */
+osSemaphoreDef(BinSem);
+BinSemHandle = osSemaphoreCreate(osSemaphore(BinSem), 1);
+
+/* definition and creation of NormalTask */
+osThreadDef(NormalTask, Startnormaltask, osPriorityNormal, 0, 128);
+NormalTaskHandle = osThreadCreate(osThread(NormalTask), NULL);
+/* definition and creation of HighTask */
+osThreadDef(HighTask, Starthightask, osPriorityAboveNormal, 0, 128);
+HighTaskHandle = osThreadCreate(osThread(HighTask), NULL);
+/* definition and creation of LowTask */
+osThreadDef(LowTask, Startlowtask, osPriorityLow, 0, 128);
+LowTaskHandle = osThreadCreate(osThread(LowTask), NULL);
+```
+
+In the main there is also the instruction osKernelStart(), that makes the scheduler to begin its work. 
+From now on, the interleaving of the tasks will be result of the scheduler and scheduling algorithm. 
+
+By deafult the scheduling algorithm of FreeRTOS is preemptive and based on priority. 
+
 ## Execution
 Here a more detailed explanation of how the flow of execution proceed, and how this program is specifically written to culminate in a priority inversion. 
 ### High Task
