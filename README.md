@@ -1,6 +1,4 @@
-
-# Structure of the branch
-
+# Structure 
 This branch contains: 
 - <a href="/README.md">**README.md**</a> file: this current file which explains the structure of the branch;
 - <a href="/point1.md">**point1.md**</a> file: which contains the development of BoardOS project Point 1;
