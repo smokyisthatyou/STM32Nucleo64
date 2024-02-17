@@ -13,8 +13,7 @@ This project contains the following 5 branches which serve to a specified scope:
 | **boardOS**    | It contains a ***guide*** explaining the structure, the project ***report*** and ***presentation***.  |
 | **point1**     | It contains a ***tutorial*** detailing the installation and usage procedures.                         |
 | **point2**     | It contains defining practical ***examples*** illustrating the functionalities of the board.          |
-| **point3**     | It contains a ***customization*** of the operating system.                                            |
-| **point4**     | It contains ***benchmarks*** of the performances achieved by the newly implemented solution.          |
+| **point3_&_4**     | It contains a ***customization*** of the operating system and ***benchmarks*** of the performances achieved by the newly implemented solution.                                                                                                    |
     
 Each branch contains a README.md file which better explains its internal structure.
 
@@ -63,11 +62,15 @@ click pictures href "https://baltig.polito.it/caos2023/group2/-/tree/point1/tuto
 graph LR;
 A[README.md];
 B[README.md];
+C[README.md];
 p2(point2)
 p2-->A;
+p2-->ex2-LED_with_Interrupt;
 p2-->ex3-priority_inversion;
+ex2-LED_with_Interrupt-->LED_with_Interrupt;
+ex2-LED_with_Interrupt-->B;
 ex3-priority_inversion-->BIN_SEM;
-ex3-priority_inversion-->B;
+ex3-priority_inversion-->C;
 
 click p2 href "https://baltig.polito.it/caos2023/group2/-/tree/point2" "Link to point2";
 
@@ -80,17 +83,11 @@ click README.md href "https://baltig.polito.it/caos2023/group2/-/blob/point2/REA
 ```mermaid
 %%{init: {'theme':'base'}}%%
 graph LR;
-p3(point3)
+p3(point3_&_4)
+p3-->customizeOS;
 p3-->README.md;
 
 ```
 
 &nbsp;
 
-```mermaid
-%%{init: {'theme':'base'}}%%
-graph LR;
-p4(point4)
-p4-->README.md;
-
-```
