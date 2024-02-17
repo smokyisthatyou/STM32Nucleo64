@@ -9,25 +9,29 @@ This branch contains:
 ```mermaid
 %%{init: {'theme':'base'}}%%
 graph LR;
-p1(point2)
+p(point2)
 A[README.md];
 B[README.md];
 C[README.md];
 D[README.md];
-p1-->A;
-p1-->ex1;
-p1-->ex2-LED_with_interrupt;
-p1-->ex3-priority_inversion;
-ex2-LED_with_interrupt-->C;
+p-->A;
+p-->ex1;
+p-->ex2-LED_with_interrupt;
+p-->ex3-priority_inversion;
+ex2-LED_with_interrupt-->B;
 ex2-LED_with_interrupt-->LED_interrupt;
 ex1-->D;
-ex3-priority_inversion --> B;
+ex3-priority_inversion --> C;
 ex3-priority_inversion --> BIN_SEM;
 
-click p1 href "https://baltig.polito.it/caos2023/group2/-/tree/point1" "Link to point1";
-click point1.md href "https://baltig.polito.it/caos2023/group2/-/tree/point1/point1.md" "Link to point1.md";
-click dir href "https://baltig.polito.it/caos2023/group2/-/tree/point1/tutorial_pictures" "Link to tutorial_pictures";
-click pictures href "https://baltig.polito.it/caos2023/group2/-/tree/point1/tutorial_pictures" "Link to tutorial_pictures";
+click p href "https://baltig.polito.it/caos2023/group2/-/tree/point2" "Link to point2";
+click README.md href "https://baltig.polito.it/caos2023/group2/-/tree/point2/README.md" "Link to point2.md";
+click ex2-LED_with_interrupt href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt" "Link to ex2-LED_with_interrupt";
+click README.md href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt/README.md" "Link to README.md";
+click LED_interrupt href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt/LED_interrupt" "Link to LED_interrupt";
+click ex3-priority_inversion href "https://baltig.polito.it/caos2023/group2/-/tree/point1/tutorial_pictures" "Link to ex3-priority_inversion";
+click README.md href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion/README.md" "Link to README.md";
+click BIN_SEM href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion/BIN_SEM" "Link to BIN_SEM";
 ```
 
 
