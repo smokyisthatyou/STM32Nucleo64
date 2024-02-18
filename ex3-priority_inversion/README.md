@@ -30,7 +30,7 @@ From the setup page of the project select PIN13 as input, since it is associated
 
 Select TIM1 as time source. 
 
-Enable FreeRTOS. 
+Enable FreeRTOS and select CMSIS_V1 as interface; in this we are exposing the CMSIS API, and we can use CMSIS specific function. This can be useful if we want a more portable code, since CMSIS is widley supported in ARM Cortex-M microcontroller. 
 
 It is possible to create the tasks and the semaphore manually or via the configuration page of the project, that will automatically generate the code.
 Configure HighTask with osPriorityAboveNormal, MediumTask with osPriorityNormal and LowTask with osPriorityLow. 
@@ -180,7 +180,5 @@ Now both the high and the low task are waiting for something (the first one for 
 Now the important point: *even if i press the button the low task has to wait the medium task to finish its execution. High task will also have to wait for medium task to finish.* Here the priority inversion: the highest priority task to resume it execution has to wait for the medium and the low priority task to finish. 
 
 When the button is pressed, low task will continue its execution and release the semaphore, (after the end of medium task). High task will execute from the waiting point. Then the medium task will run. Now high task execute acquiring and realising the semaphore. At this point medium task should run, but it is suspended for 500ms, so low task begins. It acquire the semaphore and wait for the event. In the meantime medium task will have finished it waiting time so it preempts low task. After waiting for the 500 ms, high task will resume and try to acquire the semaphore,but it has to wait. From now on medium task will preempt the low task every 500ms, as happened in the begging before the button was pressed. 
-
-Here a snippet of what the serial terminal Hercules is able to capture during execution: 
 
 
