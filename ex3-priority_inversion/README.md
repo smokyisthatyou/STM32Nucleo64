@@ -15,6 +15,7 @@ This exercise consist of three tasks with different priorities (HighTask, Normal
 HighTask and LowTask acquire and release the semaphore under certain condition, MediumTask execute without interactions.
 
 The user button of the Nucleo64 board is used to release the semaphore, firstly taken by the high priority task. 
+The semphore used is a binary one, so it has only two states: taken or not taken.
 
 This exercise is specifically design to explain the priority inversion problem that can happen in real-time systems using priority based scheduling. 
 
