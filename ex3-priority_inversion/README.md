@@ -196,6 +196,31 @@ Now the important point: *even if i press the button the low task has to wait th
 When the button is pressed, low task will continue its execution and release the semaphore, (after the end of medium task). High task will execute from the waiting point. Then the medium task will run. Now high task execute acquiring and realising the semaphore. At this point medium task should run, but it is suspended for 500ms, so low task begins. It acquire the semaphore and wait for the event. In the meantime medium task will have finished it waiting time so it preempts low task. After waiting for the 500 ms, high task will resume and try to acquire the semaphore,but it has to wait. From now on medium task will preempt the low task every 500ms, as happened in the begging before the button was pressed. 
 
 ## Possible Solution
-One possible solution for priority inversion is priority inheritance. PRiority inversion is the mechanism that consist of raising the priority of a task acquiring a shared resource to the one of the highest-priority task waiting for the same rosource to be released. 
+One possible solution for priority inversion is priority inheritance. Priority inheritance consist in raising the priority of a task acquiring a shared resource to the one of the highest-priority task waiting for the same rosource to be released. This mechanism is implemented in FreeRTOS in mutexes. 
+Substituiting the binary semaphore with a mutex (mutual exclusive semaphore) the priority of the low task will be raised to the one of high task, so that medium task will no longer preempte the low task.
+The operations to create a mutex are:
+
+writing the handler 
+```
+osSemaphoreId MutexHandle;
+```
+and then actually creating it with 
+```
+  osMutexDef(Mutex);
+  MutexHandle = osMutexCreate(osMutex(Mutex));
+```
+
+The excution will start with the high task acquiring and relasing the semaphore. Then the medium task execute. The low task will begin, acquire the mutex and wait for the button to be pressed: now the execution will stop. 
+Once the button is pressed the low task release the mutex and finish its execution, leaving room for the high task to acquire the semaphore. The execution will now go on like that. 
+
+<figure align="center">
+    <img src="img/priority_inheritance.jpg" width="400"
+         alt="Figure 4: Priority inheritance execution">
+    <figcaption>Figure 4: Priority inheritance execution</figcaption>
+</figure>
+
+
+
+
 
 
