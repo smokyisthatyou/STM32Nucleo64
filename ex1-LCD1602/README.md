@@ -60,6 +60,14 @@ Additionally, the following pins are used for control:
 
     EN (Enable): Connected to GPIOB, Pin 4
 
+
+
+<figure align="center">
+    <img src="Immages/lcd_wiring_nucleo.png" width="580"
+         alt="Figure 1: LCD">
+    <figcaption>Figure 1: LCD</figcaption>
+</figure>
+
 Configure Button B1:
 
     GPIO_InitStruct.Pin = B1_Pin;
@@ -71,6 +79,14 @@ Configure Button B1:
     HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
 
 These instructions configure the pin associated with button B1 as an input with pull-up resistance and generate an interrupt when the button goes from high (1) to low (0).
+
+Initialization of the USART2 peripheral:
+
+    MX_USART2_UART_Init();
+
+This function initializes the USART2 peripheral for serial communication.The USART2 peripheral is one of the available serial communication peripherals on the STM32F446RE board. "USART" stands for Universal Synchronous/Asynchronous Receiver/Transmitter, which is a versatile module for transmitting and receiving data.
+In simple terms, the USART2 peripheral is used for asynchronous serial communication. Serial communication is a method of transferring data between devices, one bit at a time, along a single connection wire.
+
 
 <figure align="center">
     <img src="Immages/pin_config_zoomed.png" width="580"
