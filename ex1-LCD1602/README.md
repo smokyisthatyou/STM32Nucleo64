@@ -73,7 +73,7 @@ Configure Button B1:
 These instructions configure the pin associated with button B1 as an input with pull-up resistance and generate an interrupt when the button goes from high (1) to low (0).
 
 <figure align="center">
-    <img src="Immages/pin_config_zoomed" width="580"
+    <img src="Immages/pin_config_zoomed.png" width="580"
          alt="Figure 1: pin">
     <figcaption>Figure 1: pin configuration</figcaption>
 </figure>
