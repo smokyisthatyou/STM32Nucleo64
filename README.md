@@ -2,6 +2,7 @@
 
 This branch contains: 
 - <a href="/README.md">**README.md**</a> file: this current file which explains the structure of the branch;
+- <a href="/ex0 - Normal case for Scheduling">**ex0 - Normal case for Scheduling**</a> file: contains an implementation of an exercise involving LCD;
 - <a href="/ex1-LCD1602">**ex1-LCD1602**</a> file: contains an implementation of an exercise involving LCD;
 - <a href="/ex2-LED_with_interrupt">**ex2-LED_with_interrupt**</a> file: contains an implementation of an exercise involving buttons and leds;
 - <a href="/ex3-priority_inversion">**ex-3priority_inversion**</a> directory: contains an implementation of an example of priority inversion.
@@ -15,10 +16,13 @@ A[README.md];
 B[README.md];
 C[README.md];
 D[README.md];
+E[README.md];
 p-->A;
+p-->ex0-Normal_case_for_Scheduling
 p-->ex1-LCD1602;
 p-->ex2-LED_with_interrupt;
 p-->ex3-priority_inversion;
+ex0-Normal_case_for_Scheduling-->E;
 ex2-LED_with_interrupt-->B;
 ex2-LED_with_interrupt-->LED_interrupt;
 ex1-LCD1602-->D;
