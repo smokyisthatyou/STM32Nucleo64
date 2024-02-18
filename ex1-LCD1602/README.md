@@ -63,7 +63,7 @@ Additionally, the following pins are used for control:
 
 
 <figure align="center">
-    <img src="Immages/lcd_wiring_nucleo.png" width="580"
+    <img src="Immages/lcd_wiring_nucleo(1).png" width="580"
          alt="Figure 1: LCD">
     <figcaption>Figure 1: LCD</figcaption>
 </figure>
