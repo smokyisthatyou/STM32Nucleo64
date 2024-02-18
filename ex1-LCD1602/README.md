@@ -133,3 +133,12 @@ The line of code you provided seems to be creating an instance of an LCD object 
     lcd = Lcd_create(ports, pins, GPIOB, GPIO_PIN_5, GPIOB, GPIO_PIN_4, LCD_4_BIT_MODE);
 
 In conclusion, the Lcd_create function is likely responsible for setting up the necessary configurations for the LCD, such as defining GPIO ports and pins, specifying the RS and EN pins, and indicating the data bus mode.
+
+
+PORTS: An array of GPIO port configurations. This array specifies the GPIO ports used for communication with the LCD: GPIOC, GPIOB, GPIOA, and GPIOA are being passed.
+
+PINS: An array of GPIO pin configurations. This array  specifies the specific pins within the GPIO ports used for communication with the LCD:GPIO_PIN_7, GPIO_PIN_6, GPIO_PIN_7, and GPIO_PIN_6 are being passed.
+
+LCD_4_BIT_MODE: indicates that the LCD is configured to use a 4-bit data bus mode, a common configuration for interfacing with LCDs.
+
+GPIO_PIN_4: this is used for the EN function
