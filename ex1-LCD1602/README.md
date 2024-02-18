@@ -4,8 +4,10 @@
 
 ## Overview
 
+
 The display 1602 is a versatile output interface on the which two-line messages can be displayed from 16 characters.
 Some of the functionality of the 16 display pins are illustrated in following table:
+
 
 
 <table>
@@ -96,6 +98,9 @@ In simple terms, the USART2 peripheral is used for asynchronous serial communica
 
 
 ## Execution
+
+The LCD1602 display is controlled through a 4-bit interface, as LCD_4_BIT_MODE is passed as a parameter during the creation of the LCD display. The library for controlling the display is custom-made and is included in a separate file called lcd.h and lcd.c.
+
 Writing on display LCD1602:
 
 
@@ -109,3 +114,22 @@ Writing on display LCD1602:
     }
 
 This code block writes the string "Time left" to the LCD1602 display at position (0,3) and then displays a countdown from 600 to 1 on the second row of the display.
+
+    Lcd_cursor(&lcd, 1, 7);
+
+This function call sets the cursor position on the LCD display. In the given context, the cursor is positioned at row 1 (the second row, as row indexing starts from 0) and column 7. This means that the next text or number will be written starting from the seventh position in the second row of the display.
+
+    Lcd_int(&lcd, x);
+
+This function call writes the value of x as an integer to the LCD display. The Lcd_int function converts the value of x into a string representation and displays it at the previously set cursor position.
+
+    HAL_Delay(1000);
+
+After displaying the value of x, this statement introduces a delay of 1000 milliseconds (1 second) using the HAL_Delay function. This delay creates a time interval between iterations of the for loop, thus producing a visual countdown effect on the display. The countdown occurs with a 1-second pause between each decrement of x, providing a gradual countdown visual effect on the display.
+    
+The line of code you provided seems to be creating an instance of an LCD object using a function named Lcd_create. Here's a breakdown of the parameters and their likely meanings:
+
+
+    lcd = Lcd_create(ports, pins, GPIOB, GPIO_PIN_5, GPIOB, GPIO_PIN_4, LCD_4_BIT_MODE);
+
+In conclusion, the Lcd_create function is likely responsible for setting up the necessary configurations for the LCD, such as defining GPIO ports and pins, specifying the RS and EN pins, and indicating the data bus mode.
