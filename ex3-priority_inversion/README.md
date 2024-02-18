@@ -8,6 +8,19 @@ stm32cubeide: https://www.st.com/en/development-tools/stm32cubeide.html
 
 hercules (available for windows only): https://www.hw-group.com/software/hercules-setup-utility
 
+## Content of this directory
+
+This branch contains:
+- <a href="/BIN_SEM">**BIN_SEM**</a> directory: project with the priority inversion bug;
+- <a href="/priority_inversion">**priority_inversion**</a> directory: project with the priority inversion solved;
+
+```mermaid
+%%{init: {'theme':'base'}}%%
+graph LR;
+p(exercise3);
+p-->BIN_SEM;
+p-->priority_inversion;
+```
 
 ## Overview 
 
@@ -168,7 +181,7 @@ void Startlowtask(void const * argument)
   }
 }
 ```
-This third task is the more complex one: after transmitting a message it acquires the semaphore. After that it begin to wait untile the PIN13 (the one associated to the user button) go low, in other words untile the button is pressed. 
+This third task is a bit more complex: after transmitting a message it acquires the semaphore. After that it begin to wait untile the PIN13 (the one associated to the user button) go low, in other words untile the button is pressed. 
 
 At this time the low priority task is preempte by the higher priority task once it ends it waiting stage of 500 ms. 
 
@@ -181,5 +194,8 @@ Now both the high and the low task are waiting for something (the first one for 
 Now the important point: *even if i press the button the low task has to wait the medium task to finish its execution. High task will also have to wait for medium task to finish.* Here the priority inversion: the highest priority task to resume it execution has to wait for the medium and the low priority task to finish. 
 
 When the button is pressed, low task will continue its execution and release the semaphore, (after the end of medium task). High task will execute from the waiting point. Then the medium task will run. Now high task execute acquiring and realising the semaphore. At this point medium task should run, but it is suspended for 500ms, so low task begins. It acquire the semaphore and wait for the event. In the meantime medium task will have finished it waiting time so it preempts low task. After waiting for the 500 ms, high task will resume and try to acquire the semaphore,but it has to wait. From now on medium task will preempt the low task every 500ms, as happened in the begging before the button was pressed. 
+
+## Possible Solution
+One possible solution for priority inversion is priority inheritance. PRiority inversion is the mechanism that consist of raising the priority of a task acquiring a shared resource to the one of the highest-priority task waiting for the same rosource to be released. 
 
 
