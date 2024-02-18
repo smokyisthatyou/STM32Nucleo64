@@ -214,7 +214,7 @@ The excution will start with the high task acquiring and relasing the semaphore.
 Once the button is pressed the low task release the mutex and finish its execution, leaving room for the high task to acquire the semaphore. The execution will now go on like that. 
 
 <figure align="center">
-    <img src="img/priority_inheritance.jpg" width="400"
+    <img src="img/priority_inheritance.png" width="400"
          alt="Figure 4: Priority inheritance execution">
     <figcaption>Figure 4: Priority inheritance execution</figcaption>
 </figure>
