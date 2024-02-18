@@ -2,7 +2,7 @@
 
 In this example it's shown how to update the status of the green LED using the Blue button.  
 More in detail, we want that every time the Blue button is pressed the LED changes its status. To do that we link the status of the LED to the value of a counter, which is incremented by 1 with the pressing of the Blue button.The different shapes of the LED are:
-- if the counter = 0, then it blinks with a frequency of 5 seconds;  
+- if the counter = 0, then it blinks with a frequency of 0.5 seconds;  
 - if the counter = 1, then it remains lit;  
 - if the counter = 2, then it remains off;  
 
