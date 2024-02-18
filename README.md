@@ -63,10 +63,14 @@ graph LR;
 A[README.md];
 B[README.md];
 C[README.md];
+D[README.md];
 p2(point2)
 p2-->A;
+p2-->ex1-LCD1602;
 p2-->ex2-LED_with_Interrupt;
 p2-->ex3-priority_inversion;
+ex1-LCD1602-->LCD1602;
+ex1-LCD1602-->D;
 ex2-LED_with_Interrupt-->LED_with_Interrupt;
 ex2-LED_with_Interrupt-->B;
 ex3-priority_inversion-->BIN_SEM;
