@@ -80,6 +80,7 @@ dir3-->BIN_SEM;
 dir3-->C;
 dir3-->priority_inversion;
 
+click A href "https://baltig.polito.it/caos2023/group2/-/tree/point2/README.md" "Link to README.md";
 click p2 href "https://baltig.polito.it/caos2023/group2/-/tree/point2" "Link to point2";
 click README.md href "https://baltig.polito.it/caos2023/group2/-/blob/point2/README.md" "Link to README.md";
 click dir2 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt" "Link to ex2-LED_with_interrupt";
