@@ -20,6 +20,9 @@ graph LR;
 p(exercise3);
 p-->BIN_SEM;
 p-->priority_inversion;
+
+click BIN_SEM href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion/BIN_SEM" "Link to BIN_SEM";
+click priority_inversion href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion/priority_inversion" "Link to priority_inversion";
 ```
 
 ## Overview 
