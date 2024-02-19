@@ -14,8 +14,10 @@ A[README.md];
 B[README.md];
 C[README.md];
 D[README.md];
+E[README.md];
 p2(point2)
-p2-->dir4([ex0-Normal Case for Scheduling]);
+p2-->dir4([ex0-Normal_Case_for_Scheduling]);
+dir4-->E;
 p2-->A;
 p2-->dir1([ex1-LCD1602]);
 p2-->dir2([ex2-LED_with_interrupt]);
@@ -34,7 +36,7 @@ click p2 href "https://baltig.polito.it/caos2023/group2/-/tree/point2" "Link to 
 click README.md href "https://baltig.polito.it/caos2023/group2/-/blob/point2/README.md" "Link to README.md";
 click dir2 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt" "Link to ex2-LED_with_interrupt";
 click LED_interrupt href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt/LED_interrupt" "Link to LED_interrupt";
-click B href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_Interrupt/README.md" "Link to README.md";
+click B href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt/README.md" "Link to README.md";
 click figures_for_README href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt/figures_for_README" "Link to figures_for_README";
 click dir3 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion";
 click BIN_SEM href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion/BIN_SEM";
@@ -43,6 +45,10 @@ click C href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priorit
 click dir1 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex1-LCD1602" "Link to ex1-LCD1602";
 click D href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex1-LCD1602/README.md" "Link to README.md";
 click LCD1602 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex1-LCD1602/LCD1602" "Link to LCD1602";
+click dir4 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex0-Normal_Case_for_Scheduling";
+click E href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex0-Normal_Case_for_Scheduling/README.md";
+
+
 ```
 
 
