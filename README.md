@@ -7,44 +7,42 @@ This branch contains:
 - <a href="/ex2-LED_with_interrupt">**ex2-LED_with_interrupt**</a> directory: contains an implementation of an exercise involving buttons and leds;
 - <a href="/ex3-priority_inversion">**ex-3priority_inversion**</a> directory: contains an implementation of an example of priority inversion.
 
-
 ```mermaid
 %%{init: {'theme':'base'}}%%
 graph LR;
-p(point2)
 A[README.md];
 B[README.md];
 C[README.md];
 D[README.md];
-E[README.md];
-p-->A;
-p-->dir1([ex0-Normal_case_for_Scheduling]);
-p-->dir2([ex1-LCD1602]);
-p-->dir3([ex2-LED_with_interrupt]);
-p-->dir4([ex3-priority_inversion]);
-dir1-->E;
-dir3-->B;
+p2(point2)
+p2-->dir4([ex0-Normal Case for Scheduling]);
+p2-->A;
+p2-->dir1([ex1-LCD1602]);
+p2-->dir2([ex2-LED_with_interrupt]);
+p2-->dir3([ex3-priority_inversion]);
+dir1-->LCD1602;
+dir1-->D;
 dir2-->LED_interrupt;
-dir3-->figures_for_README;
-dir2-->D;
-dir2-->LCD1602
-dir4-->C;
-dir4-->BIN_SEM;
+dir2-->B;
+dir2-->figures_for_README;
+dir3-->BIN_SEM;
+dir3-->C;
+dir3-->priority_inversion;
 
-click p href "https://baltig.polito.it/caos2023/group2/-/tree/point2" "Link to point2";
-click BIN_SEM href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion/BIN_SEM" "Link to point2";
-click README.md href "https://baltig.polito.it/caos2023/group2/-/tree/point2/README.md" "Link to point2.md";
-click ex1-LCD1602 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex1-LCD1602" "Link to ex1-LCD1602";
-click ex2-LED_with_interrupt href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt" "Link to ex2-LED_with_interrupt";
-click ex3-priority_inversion href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion" "Link to ex3-priority_inversion";
-click B href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt/README.md" "Link to README.md";
-click C href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion/README.md" "Link to ex3-priority_inversion.md";
-click D href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex21-LCD1602/README.md" "Link to LCD1602";
-click figures_for_README href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt/figures_for_README" "Link to figures_for_README";
+click A href "https://baltig.polito.it/caos2023/group2/-/tree/point2/README.md" "Link to README.md";
+click p2 href "https://baltig.polito.it/caos2023/group2/-/tree/point2" "Link to point2";
+click README.md href "https://baltig.polito.it/caos2023/group2/-/blob/point2/README.md" "Link to README.md";
+click dir2 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt" "Link to ex2-LED_with_interrupt";
 click LED_interrupt href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt/LED_interrupt" "Link to LED_interrupt";
-click ex3-priority_inversion href "https://baltig.polito.it/caos2023/group2/-/tree/point1/tutorial_pictures" "Link to ex3-priority_inversion";
-click README.md href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion/README.md" "Link to README.md";
-click BIN_SEM href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion/BIN_SEM" "Link to BIN_SEM";
+click B href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_Interrupt/README.md" "Link to README.md";
+click figures_for_README href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt/figures_for_README" "Link to figures_for_README";
+click dir3 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion";
+click BIN_SEM href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion/BIN_SEM";
+click priority_inversion href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion/priority_inversion";
+click C href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion/README.md" "Link to README.md";
+click dir1 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex1-LCD1602" "Link to ex1-LCD1602";
+click D href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex1-LCD1602/README.md" "Link to README.md";
+click LCD1602 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex1-LCD1602/LCD1602" "Link to LCD1602";
 ```
 
 
