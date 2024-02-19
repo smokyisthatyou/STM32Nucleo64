@@ -15,3 +15,8 @@ Then it will be the turn for the medium task and subsequently for the low task, 
          alt="Figure 1: LCD">
     <figcaption>Figure 1: tasks</figcaption>
 </figure>
+
+## Setup
+
+
+# Structure
