@@ -49,19 +49,6 @@ The user should now connect the board to the device. At this stage, everything i
 
 The initial step involves logging into myST through the downloaded software. This step is essential for proceeding with future operation.
 
-- *Windows OS users*:
-//
-
-<figure align="center">
-    <img src="/tutorial_pictures/3_3.png" width="150"
-         alt="Figure 5.1: Opening the &quot;Login window&quot; on Windows OS">
-    <figcaption>Figure 5.1: Opening the "Login window" on Windows OS</figcaption>
-</figure>
-
-- *Linux 64-bit users*:
-//
-
-- *MacOS users*:
 Search for the `myST` tab in the top bar of your display and click on it to unveil the `Login` button (<a href="/tutorial_pictures/3_1.png">Figure 5.3</a>). Then select it to open a window offering options for both already registered users and new ones (<a href="/tutorial_pictures/3_2.png">Figure 6</a>).
 
 <figure align="center">
