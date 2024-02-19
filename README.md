@@ -98,14 +98,14 @@ click LCD1602 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex1-L
 %%{init: {'theme':'base'}}%%
 graph LR;
 p3(point3_and_4)
-p3-->customizeOS;
-p3-->README.md;
-p3-->dir(figures_for_README);
+p3-->dir4([customizeOS]);
+p3-->dir5([README.md]);
+p3-->dir6([figures_for_README]);
 
 click p3 href "https://baltig.polito.it/caos2023/group2/-/tree/point3_and_4" "Link to point3_and_4";
-click customizeOS href "https://baltig.polito.it/caos2023/group2/-/tree/point3_and_4/customizeOS" "Link to customizeOS";
-click README.md href "https://baltig.polito.it/caos2023/group2/-/tree/point3_and_4/README.md" "Link to README.md";
-click dir href "https://baltig.polito.it/caos2023/group2/-/tree/point3_and_4/figures_for_README" "Link to figures_for_README";
+click dir4 href "https://baltig.polito.it/caos2023/group2/-/tree/point3_and_4/customizeOS" "Link to customizeOS";
+click dir5 href "https://baltig.polito.it/caos2023/group2/-/tree/point3_and_4/README.md" "Link to README.md";
+click dir6 href "https://baltig.polito.it/caos2023/group2/-/tree/point3_and_4/figures_for_README" "Link to figures_for_README";
 ```
 
 &nbsp;
