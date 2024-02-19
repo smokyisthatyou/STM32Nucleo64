@@ -30,13 +30,13 @@ graph LR;
 b(boardOS)
 b-->README.md;
 b-->report.pdf;   
-b-->report.tex;         
+b-->reportLatex.zip;         
 b-->presentation.pptx;
 b-->presentation.pdf;
 
 click b href "https://baltig.polito.it/caos2023/group2/-/tree/boardOS" "Link to boardOS";
 click report.pdf href "https://baltig.polito.it/caos2023/group2/-/tree/boardOS/report.pdf" "Link to report.pdf";
-click report.tex href "https://baltig.polito.it/caos2023/group2/-/tree/boardOS/report.tex" "Link to report.tex";
+click reportLatex.zip href "https://baltig.polito.it/caos2023/group2/-/tree/boardOS/reportLatex.zip" "Link to reportLatex.zip";
 click presentation.pptx href "https://baltig.polito.it/caos2023/group2/-/tree/boardOS/presentation.pptx" "Link to presentation.pptx";
 click presentation.pdf href "https://baltig.polito.it/caos2023/group2/-/tree/boardOS/presentation.pdf" "Link to presentation.pdf";
 
