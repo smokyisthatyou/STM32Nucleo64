@@ -87,6 +87,9 @@ click dir3 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-prio
 click BIN_SEM href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion/BIN_SEM";
 click priority_inversion href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion/priority_inversion";
 click C href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion/README.md" "Link to README.md";
+click dir1 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex1-LCD1602" "Link to ex1-LCD1602";
+click D href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex1-LCD1602/README.md" "Link to README.md";
+click LCD1602 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex1-LCD1602/LCD1602" "Link to LCD1602";
 ```
 
 &nbsp;
