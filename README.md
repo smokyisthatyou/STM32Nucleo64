@@ -71,8 +71,9 @@ A[README.md];
 B[README.md];
 C[README.md];
 D[README.md];
+E[README.md];
 p2(point2)
-p2-->dir4([ex0-Normal Case for Scheduling]);
+p2-->dir4([ex0-Normal_Case_for_Scheduling]);
 p2-->A;
 p2-->dir1([ex1-LCD1602]);
 p2-->dir2([ex2-LED_with_interrupt]);
@@ -85,13 +86,14 @@ dir2-->figures_for_README;
 dir3-->BIN_SEM;
 dir3-->C;
 dir3-->priority_inversion;
+dir4-->E
 
 click A href "https://baltig.polito.it/caos2023/group2/-/tree/point2/README.md" "Link to README.md";
 click p2 href "https://baltig.polito.it/caos2023/group2/-/tree/point2" "Link to point2";
 click README.md href "https://baltig.polito.it/caos2023/group2/-/blob/point2/README.md" "Link to README.md";
 click dir2 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt" "Link to ex2-LED_with_interrupt";
 click LED_interrupt href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt/LED_interrupt" "Link to LED_interrupt";
-click B href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_Interrupt/README.md" "Link to README.md";
+click B href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt/README.md" "Link to README.md";
 click figures_for_README href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt/figures_for_README" "Link to figures_for_README";
 click dir3 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion";
 click BIN_SEM href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion/BIN_SEM";
@@ -100,6 +102,8 @@ click C href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priorit
 click dir1 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex1-LCD1602" "Link to ex1-LCD1602";
 click D href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex1-LCD1602/README.md" "Link to README.md";
 click LCD1602 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex1-LCD1602/LCD1602" "Link to LCD1602";
+click dir4 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex0-Normal_Case_for_Scheduling" "Link to ex0-Normal_Case_for_Scheduling";
+click E href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex0-Normal_Case_for_Scheduling/README.md" "Link to README.md";
 ```
 
 &nbsp;
@@ -108,13 +112,13 @@ click LCD1602 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex1-L
 %%{init: {'theme':'base'}}%%
 graph LR;
 p3(point3_and_4)
-p3-->dir4([customizeOS]);
-p3-->dir5([README.md]);
+p3-->customizeOS;
+p3-->README.md;
 p3-->dir6([figures_for_README]);
 
 click p3 href "https://baltig.polito.it/caos2023/group2/-/tree/point3_and_4" "Link to point3_and_4";
-click dir4 href "https://baltig.polito.it/caos2023/group2/-/tree/point3_and_4/customizeOS" "Link to customizeOS";
-click dir5 href "https://baltig.polito.it/caos2023/group2/-/tree/point3_and_4/README.md" "Link to README.md";
+click customizeOS href "https://baltig.polito.it/caos2023/group2/-/tree/point3_and_4/customizeOS" "Link to customizeOS";
+click README.md href "https://baltig.polito.it/caos2023/group2/-/tree/point3_and_4/README_point3.md" "Link to README.md";
 click dir6 href "https://baltig.polito.it/caos2023/group2/-/tree/point3_and_4/figures_for_README" "Link to figures_for_README";
 ```
 
