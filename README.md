@@ -13,7 +13,7 @@ This project contains the following 5 branches which serve to a specified scope:
 | **boardOS**    | It contains a ***guide*** explaining the structure, the project ***report*** and ***presentation***.  |
 | **point1**     | It contains a ***tutorial*** detailing the installation and usage procedures.                         |
 | **point2**     | It contains defining practical ***examples*** illustrating the functionalities of the board.          |
-| **point3_and_4**     | It contains a ***customization*** of the operating system and ***benchmarks*** of the performances achieved by the newly implemented solution.                                                                                                    |
+| **point3_and_4**     | It contains a ***customization*** of the operating system and ***benchmarks*** of the performances achieved by the newly implemented solution.  |
     
 Each branch contains a README.md file which better explains its internal structure.
 
@@ -65,25 +65,25 @@ C[README.md];
 D[README.md];
 p2(point2)
 p2-->A;
-p2-->ex1-LCD1602;
-p2-->ex2-LED_with_interrupt;
-p2-->ex3-priority_inversion;
-ex1-LCD1602-->LCD1602;
-ex1-LCD1602-->D;
-ex2-LED_with_interrupt-->LED_interrupt;
-ex2-LED_with_interrupt-->B;
-ex2-LED_with_interrupt-->figures_for_README;
-ex3-priority_inversion-->BIN_SEM;
-ex3-priority_inversion-->C;
-ex3-priority_inversion-->priority_inversion;
+p2-->dir1([ex1-LCD1602]);
+p2-->dir2([ex2-LED_with_interrupt]);
+p2-->dir3([ex3-priority_inversion]);
+dir1-->LCD1602;
+dir1-->D;
+dir2-->LED_interrupt;
+dir2-->B;
+dir2-->figures_for_README;
+dir3-->BIN_SEM;
+dir3-->C;
+dir3-->priority_inversion;
 
 click p2 href "https://baltig.polito.it/caos2023/group2/-/tree/point2" "Link to point2";
 click README.md href "https://baltig.polito.it/caos2023/group2/-/blob/point2/README.md" "Link to README.md";
-click ex2-LED_with_interrupt href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt" "Link to ex2-LED_with_interrupt";
+click dir2 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt" "Link to ex2-LED_with_interrupt";
 click LED_interrupt href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt/LED_interrupt" "Link to LED_interrupt";
 click B href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_Interrupt/README.md" "Link to README.md";
 click figures_for_README href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt/figures_for_README" "Link to figures_for_README";
-click ex3-priority_inversion href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion";
+click dir3 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion";
 click BIN_SEM href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion/BIN_SEM";
 click priority_inversion href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion/priority_inversion";
 click C href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion/README.md" "Link to README.md";
