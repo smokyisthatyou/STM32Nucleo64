@@ -66,22 +66,22 @@ D[README.md];
 p2(point2)
 p2-->A;
 p2-->ex1-LCD1602;
-p2-->ex2-LED_with_Interrupt;
+p2-->ex2-LED_with_interrupt;
 p2-->ex3-priority_inversion;
 ex1-LCD1602-->LCD1602;
 ex1-LCD1602-->D;
-ex2-LED_with_Interrupt-->LED_interrupt;
-ex2-LED_with_Interrupt-->B;
-ex2-LED_with_Interrupt-->figures_for_README;
+ex2-LED_with_interrupt-->LED_interrupt;
+ex2-LED_with_interrupt-->B;
+ex2-LED_with_interrupt-->figures_for_README;
 ex3-priority_inversion-->BIN_SEM;
 ex3-priority_inversion-->C;
 
 click p2 href "https://baltig.polito.it/caos2023/group2/-/tree/point2" "Link to point2";
 click README.md href "https://baltig.polito.it/caos2023/group2/-/blob/point2/README.md" "Link to README.md";
-click ex2-LED_with_Interrupt href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_Interrupt" "Link to ex2-LED_with_Interrupt";
-click LED_interrupt href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_Interrupt/LED_interrupt" "Link to LED_interrupt";
+click ex2-LED_with_interrupt href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt" "Link to ex2-LED_with_interrupt";
+click LED_interrupt href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt/LED_interrupt" "Link to LED_interrupt";
 click B href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_Interrupt/README.md" "Link to README.md";
-click figures_for_README href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_Interrupt/figures_for_README" "Link to figures_for_README";
+click figures_for_README href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt/figures_for_README" "Link to figures_for_README";
 ```
 
 &nbsp;
