@@ -29,8 +29,10 @@ Here is a diagram displaying the contents of each branch. For further informatio
 graph LR;
 b(boardOS)
 b-->README.md;
-b-->report.pdf;            
+b-->report.pdf;   
+b-->report.tex;         
 b-->presentation.pptx;
+b-->presentation.pdf;
 
 click b href "https://baltig.polito.it/caos2023/group2/-/tree/boardOS" "Link to boardOS";
 ```
@@ -64,6 +66,7 @@ B[README.md];
 C[README.md];
 D[README.md];
 p2(point2)
+p2-->dir4([ex0-Normal Case for Scheduling]);
 p2-->A;
 p2-->dir1([ex1-LCD1602]);
 p2-->dir2([ex2-LED_with_interrupt]);
