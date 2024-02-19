@@ -13,7 +13,7 @@ This project contains the following 5 branches which serve to a specified scope:
 | **boardOS**    | It contains a ***guide*** explaining the structure, the project ***report*** and ***presentation***.  |
 | **point1**     | It contains a ***tutorial*** detailing the installation and usage procedures.                         |
 | **point2**     | It contains defining practical ***examples*** illustrating the functionalities of the board.          |
-| **point3_&_4**     | It contains a ***customization*** of the operating system and ***benchmarks*** of the performances achieved by the newly implemented solution.                                                                                                    |
+| **point3_and_4**     | It contains a ***customization*** of the operating system and ***benchmarks*** of the performances achieved by the newly implemented solution.                                                                                                    |
     
 Each branch contains a README.md file which better explains its internal structure.
 
@@ -71,14 +71,21 @@ p2-->ex2-LED_with_Interrupt;
 p2-->ex3-priority_inversion;
 ex1-LCD1602-->LCD1602;
 ex1-LCD1602-->D;
-ex2-LED_with_Interrupt-->LED_with_Interrupt;
+ex2-LED_with_Interrupt-->LED_interrupt;
 ex2-LED_with_Interrupt-->B;
+ex2-LED_with_Interrupt-->figures_for_README;
 ex3-priority_inversion-->BIN_SEM;
 ex3-priority_inversion-->C;
 
 click p2 href "https://baltig.polito.it/caos2023/group2/-/tree/point2" "Link to point2";
-
 click README.md href "https://baltig.polito.it/caos2023/group2/-/blob/point2/README.md" "Link to README.md";
+click ex2-LED_with_Interrupt href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_Interrupt" "Link to ex2-LED_with_Interrupt";
+click LED_interrupt href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_Interrupt/LED_interrupt" "Link to LED_interrupt";
+click B href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_Interrupt/README.md" "Link to README.md";
+click figures_for_README href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_Interrupt/figures_for_README" "Link to figures_for_README";
+
+
+
 
 ```
 
@@ -87,9 +94,16 @@ click README.md href "https://baltig.polito.it/caos2023/group2/-/blob/point2/REA
 ```mermaid
 %%{init: {'theme':'base'}}%%
 graph LR;
-p3(point3_&_4)
+p3(point3_and_4)
 p3-->customizeOS;
 p3-->README.md;
+p3-->figures_for_README;
+
+click p3 href "https://baltig.polito.it/caos2023/group2/-/tree/point3_and_4" "Link to point3_and_4";
+click customizeOS href "https://baltig.polito.it/caos2023/group2/-/tree/point3_and_4/customizeOS" "Link to customizeOS";
+click README.md href "https://baltig.polito.it/caos2023/group2/-/tree/point3_and_4/README.md" "Link to README.md";
+click figures_for_README href "https://baltig.polito.it/caos2023/group2/-/tree/point3_and_4/figures_for_README" "Link to figures_for_README";
+
 
 ```
 
