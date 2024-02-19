@@ -103,12 +103,11 @@ void StartTask(void const *argument)
 }
 ```
 
-By running the code in the debug mode we can see on the SWV data console that the scheduling of the tasks now is different: at time 3.5s Task 3 is no more delayed but it continues to work until time 5s, when the Task 2 results ready to run, for this reason Task 3 is blocked for 0.5s and Task 2 is the first to start.  
-**INSERISCI FOTO SCHEDULING** 
+By running the code in the debug mode we can see on the SWV data console that the scheduling of the tasks now is different: at time 3.5s Task 3 is no more delayed but it continues to work until time 5s, when the Task 2 results ready to run, for this reason Task 3 is blocked for 0.5s and Task 2 is the first to start.   
 <figure align="centre">
     <img src="figures_for_README/scheduling_with_custom_CODE.png" width="400"
-         alt="Figure 2: scheduling FREERTOS">
-    <figcaption>Figure 2: scheduling FREERTOS</figcaption>
+         alt="Figure 2: scheduling FREERTOS after customization">
+    <figcaption>Figure 2: scheduling FREERTOS after customization</figcaption>
 </figure>
 
 In this way we have optimize the usage of time by filling the empty spaces in the scheduling and by decreasing the number of context switches in those cases when all the tasks could be blocked contemporary.
