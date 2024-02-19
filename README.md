@@ -2,7 +2,7 @@
 
 This branch contains: 
 - <a href="/README.md">**README.md**</a> file: this current file which explains the structure of the branch;
-- <a href="/ex0 - Normal case for Scheduling">**ex0 - Normal case for Scheduling**</a> file: contains an implementation of an exercise involving LCD;
+- <a href="/ex0 - Normal case for Scheduling">**ex0 - Normal case for Scheduling**</a> file: contains a basic example of the FreeRTOS's scheduling;
 - <a href="/ex1-LCD1602">**ex1-LCD1602**</a> file: contains an implementation of an exercise involving LCD;
 - <a href="/ex2-LED_with_interrupt">**ex2-LED_with_interrupt**</a> file: contains an implementation of an exercise involving buttons and leds;
 - <a href="/ex3-priority_inversion">**ex-3priority_inversion**</a> directory: contains an implementation of an example of priority inversion.
@@ -18,13 +18,14 @@ C[README.md];
 D[README.md];
 E[README.md];
 p-->A;
-p-->ex0-Normal_case_for_Scheduling
+p-->ex0-Normal_case_for_Scheduling;
 p-->ex1-LCD1602;
 p-->ex2-LED_with_interrupt;
 p-->ex3-priority_inversion;
 ex0-Normal_case_for_Scheduling-->E;
 ex2-LED_with_interrupt-->B;
 ex2-LED_with_interrupt-->LED_interrupt;
+ex2-LED_with_interrupt-->figures_for_README;
 ex1-LCD1602-->D;
 ex1-LCD1602-->LCD1602
 ex3-priority_inversion --> C;
@@ -35,6 +36,7 @@ click README.md href "https://baltig.polito.it/caos2023/group2/-/tree/point2/REA
 click ex1-LCD1602 href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex1-LCD1602" "Link to ex1-LCD1602";
 click ex2-LED_with_interrupt href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt" "Link to ex2-LED_with_interrupt";
 click README.md href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt/README.md" "Link to README.md";
+click figures_for_README href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt/figures_for_README" "Link to figures_for_README";
 click LED_interrupt href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_interrupt/LED_interrupt" "Link to LED_interrupt";
 click ex3-priority_inversion href "https://baltig.polito.it/caos2023/group2/-/tree/point1/tutorial_pictures" "Link to ex3-priority_inversion";
 click README.md href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex3-priority_inversion/README.md" "Link to README.md";
