@@ -44,13 +44,12 @@ p1(point1)
 p1-->README.md;
 p1-->point1.md;
 p1-->dir([tutorial_pictures]);
-pictures["board.png <br>board_diagram.png <br>1.png <br>2.png <br>3_1.png <br>3_2.png <br>4_1.png <br>4_2.png <br>5_1.png <br>5_2.png <br>5_4.png <br>6_1.png <br>6_2.png <br>6_3.png"]
+pictures["board.png <br>board_diagram.png <br>1.png <br>2.png <br>3_1.png <br>3_2.png <br>4_1.png <br>4_2.png <br>5_1.png <br>5_2.png <br>5_4.png <br>6_1.png <br>6_2.png <br>6_3.png <br>7.png <br>8_1.png <br>8_2.png <br>8_3.png <br>9_1.png <br>9_2.png <br>9_3.png <br>10_1.png <br>10_2.png"]
 dir([tutorial_pictures])-->pictures;
 
 click p1 href "https://baltig.polito.it/caos2023/group2/-/tree/point1" "Link to point1";
-
+click point1.md href "https://baltig.polito.it/caos2023/group2/-/tree/point1/point1.md" "Link to point1.md";
 click README.md href "https://baltig.polito.it/caos2023/group2/-/blob/point1/README.md" "Link to README.md";
-click point1.md href "https://baltig.polito.it/caos2023/group2/-/blob/point1/point1.md" "Link to point1.md";
 click dir href "https://baltig.polito.it/caos2023/group2/-/tree/point1/tutorial_pictures" "Link to tutorial_pictures";
 click pictures href "https://baltig.polito.it/caos2023/group2/-/tree/point1/tutorial_pictures" "Link to tutorial_pictures";
 ```
@@ -83,10 +82,6 @@ click ex2-LED_with_Interrupt href "https://baltig.polito.it/caos2023/group2/-/tr
 click LED_interrupt href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_Interrupt/LED_interrupt" "Link to LED_interrupt";
 click B href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_Interrupt/README.md" "Link to README.md";
 click figures_for_README href "https://baltig.polito.it/caos2023/group2/-/tree/point2/ex2-LED_with_Interrupt/figures_for_README" "Link to figures_for_README";
-
-
-
-
 ```
 
 &nbsp;
@@ -97,14 +92,12 @@ graph LR;
 p3(point3_and_4)
 p3-->customizeOS;
 p3-->README.md;
-p3-->figures_for_README;
+p3-->dir(figures_for_README);
 
 click p3 href "https://baltig.polito.it/caos2023/group2/-/tree/point3_and_4" "Link to point3_and_4";
 click customizeOS href "https://baltig.polito.it/caos2023/group2/-/tree/point3_and_4/customizeOS" "Link to customizeOS";
 click README.md href "https://baltig.polito.it/caos2023/group2/-/tree/point3_and_4/README.md" "Link to README.md";
-click figures_for_README href "https://baltig.polito.it/caos2023/group2/-/tree/point3_and_4/figures_for_README" "Link to figures_for_README";
-
-
+click dir href "https://baltig.polito.it/caos2023/group2/-/tree/point3_and_4/figures_for_README" "Link to figures_for_README";
 ```
 
 &nbsp;
