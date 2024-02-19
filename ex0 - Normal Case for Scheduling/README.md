@@ -13,5 +13,5 @@ Then it will be the turn for the medium task and subsequently for the low task, 
 figure align="center">
     <img src="Immages/aa.png" width="580"
          alt="Figure 1: LCD">
-    <figcaption>Figure 1: LCD</figcaption>
+    <figcaption>Figure 1: tasks</figcaption>
 </figure>
